@@ -4,7 +4,7 @@
         "name": "Wireless Headphones",
         "category": "Electronics",
         "price": 99.99,
-        "image": "/images/headphones.jpg",
+        "image": "./public/images/headphones.png",
         "description": "High-quality wireless headphones with noise cancellation."
     },
     {
@@ -12,7 +12,63 @@
         "name": "Smart Watch",
         "category": "Electronics",
         "price": 199.99,
-        "image": "/images/smartwatch.jpg",
+        "image": "./public/images/smartwatch.png",
         "description": "Stay connected on the go with this stylish smart watch."
+    },
+    {
+        "id": 3,
+        "name": "Microwave Oven",
+        "category": "Home Appliances",
+        "price": 150.00,
+        "image": "./public/images/microwaveoven.png",
+        "description": "Compact and powerful microwave oven with multiple cooking modes."
+    },
+    {
+        "id": 4,
+        "name": "Vacuum Cleaner",
+        "category": "Home Appliances",
+        "price": 120.00,
+        "image": "./public/images/vaccumcleaner.png",
+        "description": "Efficient vacuum cleaner with advanced filtration system."
+    },
+    {
+        "id": 5,
+        "name": "Leather Jacket",
+        "category": "Clothing",
+        "price": 250.00,
+        "image": "./public/images/leatherjacket.png",
+        "description": "Stylish and durable leather jacket for all weather conditions."
+    },
+    {
+        "id": 6,
+        "name": "Running Shoes",
+        "category": "Clothing",
+        "price": 80.00,
+        "image": "./public/images/runningshoes.png",
+        "description": "Lightweight and comfortable running shoes for daily wear."
+    },
+    {
+        "id": 7,
+        "name": "Gaming Laptop",
+        "category": "Electronics",
+        "price": 999.99,
+        "image": "./public/images/gaminglaptop.png",
+        "description": "High-performance gaming laptop with a dedicated GPU and RGB keyboard."
+    },
+    {
+        "id": 8,
+        "name": "Air Purifier",
+        "category": "Home Appliances",
+        "price": 200.00,
+        "image": "./public/images/airpurifier.png",
+        "description": "Advanced air purifier with HEPA filter for clean and fresh air."
+    },
+    {
+        "id": 9,
+        "name": "Nike Jacket",
+        "category": "Clothing",
+        "price": 500.00,
+        "image": "./public/images/jacket.png",
+        "description": "Classic Nike Jacket with a perfect fit and stylish design."
     }
 ]

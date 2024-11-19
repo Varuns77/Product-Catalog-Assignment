@@ -1,14 +1,18 @@
-import React from 'react';
+import React from "react";
 
 const SearchBar = ({ setSearchQuery }) => {
-    return (
+  return (
+    <div className="w-100 bg-red-500 flex items-center justify-center">
+      <div className="max-w-full w-[35%]">
         <input
-            type="text"
-            placeholder="Search products..."
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="border p-2 w-full mb-4"
+          type="text"
+          placeholder="Search products..."
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="p-2 mb-4 mt-4 w-full h-full rounded-md"
         />
-    );
+      </div>
+    </div>
+  );
 };
 
 export default SearchBar;
