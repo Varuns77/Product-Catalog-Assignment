@@ -46,7 +46,7 @@ This is a single-page application (SPA) that displays a product catalog. Users c
 ## Screenshots
 
 ### Home Page
-![Home Page](./images/screenshots/home-page.png)
+![Home Page](public/images/screenshots/home-page.png)
 
 ### Product Details Page
 ![Product Details Page](./images/screenshots/product-details-page.png)
