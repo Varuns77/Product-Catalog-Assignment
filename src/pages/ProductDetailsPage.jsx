@@ -12,8 +12,8 @@ const ProductDetailsPage = ({ products }) => {
     }
 
     return (
-        <div>
-            <Link to="/" className="hover:underline forum font-bold text-gray-700 select-none flex items-center space-x-2 relative top-20 ml-6 md:ml-16 bg-white"> <MdOutlineKeyboardBackspace className='mr-1'/> Back to Products</Link>
+        <div className='h-full min-h-screen'>
+            <Link to="/" className="hover:underline font-bold text-gray-700 select-none flex items-center space-x-2 relative top-20 ml-6 md:ml-16"> <MdOutlineKeyboardBackspace className='mr-1'/> Back to Products</Link>
             <ProductDetails product={product} />
         </div>
     );

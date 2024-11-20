@@ -11,9 +11,9 @@ const CategoryFilter = ({ products, setSelectedCategory,sortOrder, setSortOrder 
         </label>
         <select
           onChange={(e) => setSelectedCategory(e.target.value)}
-          className="border p-2 rounded-md"
+          className="border p-2 rounded-md focus:ring-1 focus:ring-slate-400"
         >
-          <option value="">Select</option>
+          <option value="">All</option>
           {categories.map((category) => (
             <option key={category} value={category}>
               {category}
@@ -29,7 +29,7 @@ const CategoryFilter = ({ products, setSelectedCategory,sortOrder, setSortOrder 
           id="sortOrder"
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
-          className="border p-2 rounded-md"
+          className="border p-2 rounded-md focus:ring-1 focus:ring-slate-400"
         >
           <option value="default">Default</option>
           <option value="asc">Price: Low to High</option>

@@ -2,16 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ProductItem = ({ product }) => {
-  return (
-    // <div className="border p-4 rounded shadow">
-    //     <img src={product.image} alt={product.name} className="h-40 w-full object-cover" />
-    //     <h3 className="text-lg font-bold">{product.name}</h3>
-    //     <p>₹ {product.price.toFixed(2)}</p>
-    //     <Link to={`/products/${product.id}`} className="text-blue-500 underline">
-    //         View Details
-    //     </Link>
-    // </div>
-
+  return (  
     <div className="bg-white transition transform duration-700 hover:shadow-xl hover:border-slate-400 hover:scale-105 p-3 rounded-lg relative border">
       <img
         className="w-72 h-56 object-contain mx-auto transform transition duration-300 hover:scale-105"
@@ -23,7 +14,7 @@ const ProductItem = ({ product }) => {
             {product.name}
         </h1>
         <h1 className="text-xl text-gray-700">
-          ₹ {product.price.toFixed(2)}
+          ₹ {product.price}
         </h1>
         <Link
           to={`/products/${product.id}`}

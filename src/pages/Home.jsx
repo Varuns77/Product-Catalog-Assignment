@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ProductList from '../components/ProductList';
 import SearchBar from '../components/SearchBar';
 import CategoryFilter from '../components/Category-SortFilter';
-import SortFilter from '../components/SortFilter';
 
 const Home = ({ products }) => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -25,10 +24,9 @@ const Home = ({ products }) => {
         });
 
     return (
-        <div className='w-full bg-slate-100 h-full min-h-screen'>
+        <div className='w-full  h-full min-h-screen'>
             <SearchBar setSearchQuery={setSearchQuery} />
             <CategoryFilter products={products} setSelectedCategory={setSelectedCategory} sortOrder={sortOrder} setSortOrder={setSortOrder}/>
-            {/* <SortFilter sortOrder={sortOrder} setSortOrder={setSortOrder} /> */}
             <ProductList products={filteredProducts} />
         </div>
     );
