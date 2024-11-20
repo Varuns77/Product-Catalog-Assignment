@@ -49,4 +49,4 @@ This is a single-page application (SPA) that displays a product catalog. Users c
 ![Home Page](public/images/screenshots/home-page.png)
 
 ### Product Details Page
-![Product Details Page](./images/screenshots/product-details-page.png)
+![Product Details Page](public/images/screenshots/product-details-page.png)
