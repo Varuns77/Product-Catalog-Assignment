@@ -3,7 +3,7 @@ import React from "react";
 const SortFilter = ({sortOrder, setSortOrder}) => {
   return (
     <div className="mb-4">
-      <label htmlFor="sortOrder" className="mr-2">
+      <label htmlFor="sortOrder" className="mr-2 font-mono">
         Sort by:
       </label>
       <select

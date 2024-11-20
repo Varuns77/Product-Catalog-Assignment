@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import ProductList from '../components/ProductList';
 import SearchBar from '../components/SearchBar';
-import CategoryFilter from '../components/CategoryFilter';
+import CategoryFilter from '../components/Category-SortFilter';
 import SortFilter from '../components/SortFilter';
 
 const Home = ({ products }) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('');
-    const [sortOrder, setSortOrder] = useState('default'); // New state for sorting
+    const [sortOrder, setSortOrder] = useState('default');
 
     const filteredProducts = products
         .filter(product => {
@@ -25,9 +25,9 @@ const Home = ({ products }) => {
         });
 
     return (
-        <div className='bg-gray-300 w-full h-full'>
+        <div className='w-full bg-slate-100 h-full min-h-screen'>
             <SearchBar setSearchQuery={setSearchQuery} />
-            <CategoryFilter products={products} setSelectedCategory={setSelectedCategory} />
+            <CategoryFilter products={products} setSelectedCategory={setSelectedCategory} sortOrder={sortOrder} setSortOrder={setSortOrder}/>
             {/* <SortFilter sortOrder={sortOrder} setSortOrder={setSortOrder} /> */}
             <ProductList products={filteredProducts} />
         </div>

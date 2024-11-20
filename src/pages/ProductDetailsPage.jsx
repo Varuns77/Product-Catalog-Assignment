@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ProductDetails from '../components/ProductDetails';
+import { MdOutlineKeyboardBackspace } from 'react-icons/md';
 
 const ProductDetailsPage = ({ products }) => {
     const { id } = useParams();
@@ -12,7 +13,7 @@ const ProductDetailsPage = ({ products }) => {
 
     return (
         <div>
-            <Link to="/" className="text-blue-500 underline">Back to Products</Link>
+            <Link to="/" className="hover:underline forum font-bold text-gray-700 select-none flex items-center space-x-2 relative top-20 ml-6 md:ml-16 bg-white"> <MdOutlineKeyboardBackspace className='mr-1'/> Back to Products</Link>
             <ProductDetails product={product} />
         </div>
     );

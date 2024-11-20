@@ -1,6 +1,6 @@
 import React from "react";
 
-const CategoryFilter = ({ products, setSelectedCategory }) => {
+const CategoryFilter = ({ products, setSelectedCategory,sortOrder, setSortOrder }) => {
   const categories = [...new Set(products.map((product) => product.category))];
 
   return (
@@ -27,8 +27,8 @@ const CategoryFilter = ({ products, setSelectedCategory }) => {
         </label>
         <select
           id="sortOrder"
-          //   value={sortOrder}
-          //   onChange={(e) => setSortOrder(e.target.value)}
+            value={sortOrder}
+            onChange={(e) => setSortOrder(e.target.value)}
           className="border p-2 rounded-md"
         >
           <option value="default">Default</option>
