@@ -43,3 +43,10 @@ This is a single-page application (SPA) that displays a product catalog. Users c
 * Sorting: Added a dropdown to sort products by price (ascending or descending).
 * Animations: Smooth transitions and hover effects enhance the user experience.
 
+## Screenshots
+
+### Home Page
+![Home Page](./images/screenshots/home-page.png)
+
+### Product Details Page
+![Product Details Page](./images/screenshots/product-details-page.png)
