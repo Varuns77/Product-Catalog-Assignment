@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "name": "Vacuum Cleaner",
+        "name": "Vaccum Cleaner",
         "category": "Home Appliances",
         "price": 1500,
         "image": "./public/images/vaccumcleaner.png",
