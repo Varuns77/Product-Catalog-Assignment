@@ -7,7 +7,7 @@ const ProductItem = ({ product, addToCart }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isAddedToCart, setIsAddedToCart] = useState(false);
   const navigate = useNavigate();
-  
+
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
@@ -18,7 +18,7 @@ const ProductItem = ({ product, addToCart }) => {
       addToCart(product);
       setIsAddedToCart(true);
     }
-};
+  };
 
   return (
     <>
@@ -52,21 +52,20 @@ const ProductItem = ({ product, addToCart }) => {
 
             {/* Add to Cart */}
             <button
-              className = {`${
+              className={`${
                 isAddedToCart ? "bg-green-500" : "bg-blue-500"
               } text-white text-xs px-2 py-2 text-nowrap rounded-md transition hover:opacity-90`}
               onClick={handleAddToCart}
             >
-              {isAddedToCart ? "Added to Cart" : "Add to Cart"} 
+              {isAddedToCart ? "Added to Cart" : "Add to Cart"}
             </button>
           </div>
         </div>
-
-        {/* Modal */}
-        {isModalOpen && (
-          <ProductDetailsModal product={product} onClose={closeModal} />
-        )}
       </div>
+      {/* Modal */}
+      {isModalOpen && (
+        <ProductDetailsModal product={product} onClose={closeModal} />
+      )}
     </>
   );
 };
