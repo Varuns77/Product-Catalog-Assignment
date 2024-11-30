@@ -3,10 +3,11 @@ import ProductList from '../components/ProductList';
 import SearchBar from '../components/SearchBar';
 import CategoryFilter from '../components/Category-SortFilter';
 
-const Home = ({ products }) => {
+const Home = ({ products, addToCart }) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('');
     const [sortOrder, setSortOrder] = useState('default');
+    
 
     const filteredProducts = products
         .filter(product => {
@@ -27,7 +28,7 @@ const Home = ({ products }) => {
         <div className='w-full  h-full min-h-screen'>
             <SearchBar setSearchQuery={setSearchQuery} />
             <CategoryFilter products={products} setSelectedCategory={setSelectedCategory} sortOrder={sortOrder} setSortOrder={setSortOrder}/>
-            <ProductList products={filteredProducts} />
+            <ProductList products={filteredProducts} addToCart={addToCart} />
         </div>
     );
 };
